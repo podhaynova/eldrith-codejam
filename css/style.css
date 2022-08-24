@@ -39,7 +39,6 @@ margin-bottom: 1em;
 cursor: pointer;
 width: 10em;
 height: 12em;
-cursor: pointer;
 background-repeat: no-repeat;
 background-size: contain;
 }
@@ -50,19 +49,19 @@ background-size: contain;
 }
 
 #azathoth {
-  background-image: url("../assets/Ancients/Azathoth.png");
+  background-image: url("../assets/Ancients/Azathoth.jpg");
 }
 
 #cthulthu {
-  background-image: url("../assets/Ancients/Cthulthu.png");
+  background-image: url("../assets/Ancients/Cthulthu.jpg");
 }
 
 #iogsothoth {
-  background-image: url("../assets/Ancients/IogSothoth.png");
+  background-image: url("../assets/Ancients/IogSothoth.jpg");
 }
 
 #shubniggurath {
-  background-image: url("../assets/Ancients/ShubNiggurath.png");
+  background-image: url("../assets/Ancients/ShubNiggurath.jpg");
 }
 
 body {
