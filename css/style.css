@@ -11,13 +11,16 @@
   }
 
 .ancients__wrapper {
-  margin: 15px;
+  margin: 0px;
 }
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
   width: 100%;
+  margin-bottom: 0.5em;
 }
 
 .column {
@@ -35,7 +38,6 @@
 .ancients-card {
 box-sizing: border-box;
 float:left;
-margin-bottom: 1em;
 cursor: pointer;
 width: 10em;
 height: 12em;
@@ -72,12 +74,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 h2 {
   color: rgb(115, 248, 100);
   text-decoration: underline;
   text-align: center;
+  margin: 1em;
 }
 
 .level{
@@ -89,9 +93,99 @@ h2 {
   padding: 10px;
   margin: 6px;
   text-align: center;
+  font-size: 2em;
   border-radius: 15px;
+  transition: background-color 0.6s linear;
 }
 
+.level:hover{
+  border: 5px solid rgb(246, 246, 246);
+  background-color: rgb(249, 244, 244);
+  box-sizing: border-box;
+  color: rgb(15, 138, 112);
+  cursor: pointer;
+  padding: 10px;
+  margin: 6px;
+  text-align: center;
+  text-decoration: underline;
+  transition: background-color 0.4s linear;
+}
+/*:link — :visited — :hover — :active.*/
 .card__wrapper{
-  width: 25%;
+  width: 33%;
+  float:right;
+  vertical-align: middle;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-direction: row;
+}
+
+.shuffle {
+  border: 2px solid white;
+  background-color: rgb(121, 157, 255);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  margin: 6px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: xx-large;
+  transition: background-color 0.6s linear;
+}
+
+.shuffle:hover {
+  border: 5px solid rgb(8, 6, 81);
+  background-color: rgb(249, 244, 244);
+  box-sizing: border-box;
+  color: rgb(15, 138, 112);
+  cursor: pointer;
+  padding: 10px;
+  margin: 6px;
+  text-align: center;
+  text-decoration: underline;
+  transition: background-color 0.4s linear;
+}
+
+.card {
+  background-image: url("../assets/mythicCardBackground.png");
+  height: 20em;
+  width: 16em;
+  border-radius: 15px;
+  margin-right: 0.5em;
+  transition: background-color 0.4s linear;
+}
+
+#empty {
+  background-image: none;
+  background-color: rgb(115, 84, 132);
+  height: 20em;
+  width: 16em;
+  border-radius: 15px;
+  margin-right: 0.5em;
+  transition: background-color 0.4s linear;
+}
+
+.green {
+  width: 3em;
+  height: 3em;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.brown {
+  width: 3em;
+  height: 3em;
+  background-color: brown;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+.blue {
+  width: 3em;
+  height: 3em;
+  background-color: blue;
+  border-radius: 50%;
+  margin-right: 1em;
 }
