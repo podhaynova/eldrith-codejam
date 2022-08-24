@@ -1,4 +1,98 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.ancients__wrapper {
+  margin: 15px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  color: rgb(9, 174, 229);
+  text-align: center;
+  font-size: xx-large;
+  background-size: contain;
+  text-shadow: #333 -1px -1px 0, #fff 1px 1px 0;
+}
+
+.ancients-card {
+box-sizing: border-box;
+float:left;
+margin-bottom: 1em;
+cursor: pointer;
+width: 10em;
+height: 12em;
+cursor: pointer;
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+.ancients-card.active {
+  border:  solid red;
+  width: 100%;
+}
+
+#azathoth {
+  background-image: url("../assets/Ancients/Azathoth.png");
+}
+
+#cthulthu {
+  background-image: url("../assets/Ancients/Cthulthu.png");
+}
+
+#iogsothoth {
+  background-image: url("../assets/Ancients/IogSothoth.png");
+}
+
+#shubniggurath {
+  background-image: url("../assets/Ancients/ShubNiggurath.png");
+}
+
 body {
-    background-image: url('/assets/home.png');
+    background: url("../assets/home.png") top/cover no-repeat; 
+}
+
+.difficulty-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  color: rgb(115, 248, 100);
+  text-decoration: underline;
+  text-align: center;
+}
+
+.level{
+  border: 2px solid white;
+  background-color: rgb(107, 5, 5);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  margin: 6px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.card__wrapper{
+  width: 25%;
 }

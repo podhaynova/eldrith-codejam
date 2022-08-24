@@ -26,4 +26,5 @@ const cards = {
   blue12,
 }
 
+
 export default cards
